@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/drawable/my_graident.xml" value="0.1" />
         <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/layout/fragment_shot.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/layout/newsitem.xml" value="0.536" />
+        <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/layout/shot.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/sara/Proyectos/VeterinarioApp/app/src/main/res/menu/navigation.xml" value="0.2" />
       </map>
     </option>
