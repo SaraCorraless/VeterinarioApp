@@ -25,7 +25,7 @@ class ShotFragment : Fragment() {
 
     val shotList = ArrayList<Shot>()
     private var layoutManager:RecyclerView.LayoutManager? = null
-
+    private lateinit var adapter: ShotAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +33,7 @@ class ShotFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+        createData()
     }
 
     override fun onCreateView(
@@ -50,6 +51,10 @@ class ShotFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.fragmentshot)
         layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
         recyclerView.layoutManager = layoutManager
+        adapter = ShotAdapter(shotList)
+        recyclerView.adapter = adapter
+
+
 
     }
 
@@ -72,4 +77,13 @@ class ShotFragment : Fragment() {
                 }
             }*/
     }
+
+    private fun createData(){
+        shotList.add(Shot(1, "Vacuna 1", false))
+        shotList.add(Shot(2, "Vacuna 2", true))
+        shotList.add(Shot(3, "Vacuna 3", true))
+
+    }
+
+
 }

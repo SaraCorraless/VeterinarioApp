@@ -18,11 +18,10 @@ class ShotAdapter(val shotList:ArrayList<Shot>):RecyclerView.Adapter<ShotAdapter
             val taken = itemView.findViewById<ToggleButton>(R.id.toggle)
 
             name.text = shot.name.toString()
-                if (shot.taken){
+                if (shot.taken)
                     taken.isChecked = true
-                } else {
-                    taken.isEnabled = false
-                }
+            taken.isEnabled = false
+
         }
 
 
